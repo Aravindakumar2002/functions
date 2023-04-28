@@ -15,6 +15,8 @@
 
 // console.log(numbers.map(square)); // Output: [1, 4, 9, 16, 25]
 
+const numbers=[1,]
+
 //2.Write a function that takes an array of objects with a nameproperty and returns a 
 // new array of strings with the name of each object capitalized. Use the Mapobject to accomplish this.
 
@@ -82,7 +84,7 @@
 //   });
 //   return result;
 // }
-// console.log(groupByCategory(employees))
+// console.log(groupByCategory(employees));
 
 
 // 6.Write a function that takes an array of strings and returns a new array with only the unique strings. 
@@ -111,29 +113,29 @@
 //   an object where the keys are the age and the values are arrays of objects with that age.
 //   Use the Mapobject to accomplish this.
 
-// arr=[{name:"aravind", age:20},
-//      {name:"muthu" ,age:20},
-//      {name:"singaram" ,age:24},
-//      {name:"rajesh" ,age:24},
-//      {name:"roshin", age:22}]
+arr=[{name:"aravind", age:20},
+     {name:"muthu" ,age:20},
+     {name:"singaram" ,age:24},
+     {name:"rajesh" ,age:24},
+     {name:"roshin", age:22}]
 
-// function mapByAge(arr) {
+function mapByAge(arr) {
 
-//   const result = {};
+  const result = {};
   
-//   for (const obj of arr) {
-//     const { name, age } = obj;
+  for (const obj of arr) {
+    const { name, age } = obj;
     
-//     if (!result[age]) {
-//       result[age] = [];
-//     }
+    if (!result[age]) {
+      result[age] = [];
+    }
     
-//     result[age].push({ name, age });
-//   }
+    result[age].push({ name });
+  }
   
-//   return result;
-// }
-// console.log(mapByAge(arr))
+  return result;
+}
+console.log(mapByAge(arr))
 
 
 // 9.Write a function that takes an array of strings and returns an object where the keys are 
@@ -183,5 +185,4 @@
   
 //   return result;
 // }
-// console.log(groupByYear(input));
 // console.log(groupByYear(input));
